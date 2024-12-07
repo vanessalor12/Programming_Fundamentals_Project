@@ -1,0 +1,112 @@
+PROBLEM STATEMENT:
+The program will total up the bowler's scores.  In a loop, the program will ask for the bowler to enter their scores for each game that they bowled. 
+The program will collect the bowler's scores until the bowler enters done to quit. Once all the scores has been gathered, the program will 
+display the total number of scores collected. Each entered scores will be added to the total score. When the bowler enters done, it will 
+terminate the loop and output the total. Then the program will display "Great job bowling today!." 
+
+Nouns: score, total score, average score
+
+Verbs: ask, enter, collect, gathered, display, added, take, terminate, output
+
+
+DEFINING DIAGRAM
+
+Inputs: 
+  bowling scores
+
+Processing:
+  collect bowler's scores until bowler enters done
+  display number of scores collected
+  scores entered will be added to a total score
+  if number is done then terminate loop
+
+Outputs:
+  output the total
+  display message
+
+
+PSEUDOCODE:
+bowlingloopStopIf
+  loopTest = true
+  bowlingScore = []
+  total = 0
+  while loopTest = true
+    prompt for bowlingScoreIn
+    if bowlingScoreIn === "done" then
+      loopTest = false
+    else
+      bowlingScore.push = bowlingScoreIn
+      total += Number(bowlingScoreIn)
+    endif
+  endwhile
+  display "You entered " + bowlingScore.length + " bowling scores."
+  for index = 0; index < userNames.length; index++
+    display "Score entered: " + userNames[index]
+    display "Total of all numbers entered:  " + total
+    display "Great job bowling today!"
+  endfor
+END
+
+
+TEST PLANS:
+VARIABLES: bowlingScore
+
+TEST CASE 1: 
+
+  INPUT VALUES: 150, 175, 200
+
+  EXPECTED RESULT:
+  You entered 3 bowling scores.
+  Score entered:  150
+  Score entered:  175
+  Score entered:  200
+  Total of all scores entered:  525
+  Great job bowling today!
+
+  ACTUAL RESULT:
+  You entered 3 bowling scores.
+  Score entered:  150
+  Score entered:  175
+  Score entered:  200
+  Total of all scores entered:  525
+  Great job bowling today!
+
+TEST CASE 2:
+
+  INPUT VALUES: 120, 200, 190
+
+  EXPECTED RESULT:
+  You entered 3 bowling scores.
+  Score entered:  120
+  Score entered:  200
+  Score entered:  190
+  Total of all scores entered:  510
+  Great job bowling today!
+  
+  ACTUAL RESULT:
+  You entered 3 bowling scores.
+  Score entered:  120
+  Score entered:  200
+  Score entered:  190
+  Total of all scores entered:  510
+  Great job bowling today!
+  
+TEST CASE 3:
+
+  INPUT VALUES: 185, 225, 110
+
+  EXPECTED RESULT:
+  You entered 3 bowling scores.
+  Score entered:  185
+  Score entered:  225
+  Score entered:  110
+  Total of all scores entered:  520
+  Great job bowling today!
+  
+  ACTUAL RESULT:
+  You entered 3 bowling scores.
+  Score entered:  185
+  Score entered:  225
+  Score entered:  110
+  Total of all scores entered:  520
+  Great job bowling today!
